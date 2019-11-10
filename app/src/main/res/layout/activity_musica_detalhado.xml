@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#778899"
+    tools:context=".Activity.ArtistaDetalhado">
+
+    <TextView
+        android:id="@+id/musicaDetalhado_nome_musica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Música xxx"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal"/>
+    <!--<TextView
+        android:id="@+id/musicaDetalhado_nome_album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Álbum xxx"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal"
+        android:layout_below="@id/musicaDetalhado_nome_musica"/>
+    <TextView
+        android:id="@+id/musicaDetalhado_nome_artista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Artista xxx"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal"
+        android:layout_below="@id/musicaDetalhado_nome_album"/>
+      -->
+
+    <RelativeLayout
+        android:id="@+id/musicaDetalhado_caixa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@id/musicaDetalhado_nome_musica">
+
+        <ImageView
+            android:id="@+id/mmusicaDetalhado_foto_musica"
+            android:layout_width="1000dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/baseline_music_note_black_48" />
+
+
+        <ImageView
+            android:id="@+id/musicaDetalhado_play_imagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baseline_play_arrow_black_36"
+            android:layout_below="@id/mmusicaDetalhado_foto_musica"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/musicaDetalhado_tempo_texto"
+            android:layout_below="@+id/musicaDetalhado_play_imagem"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="0:00 / 3:20"/>
+    </RelativeLayout>
+
+</RelativeLayout>

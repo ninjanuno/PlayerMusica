@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#778899"
+    tools:context=".Activity.ArtistaDetalhado">
+
+    <TextView
+        android:id="@+id/artistaDetalhado_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Artista"
+        android:textSize="32dp"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal"/>
+
+
+    <RelativeLayout
+        android:id="@+id/artistaDetalhado_caixa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@id/artistaDetalhado_nome">
+
+        <ImageView
+            android:id="@+id/artistaDetalhado_foto_artista"
+            android:layout_width="1000dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/baseline_face_black_48" />
+
+        <TextView
+            android:id="@+id/artistaDetalhado_texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"
+            android:text="      Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto "
+            android:layout_below="@id/artistaDetalhado_foto_artista"/>
+
+        <ImageView
+            android:id="@+id/artistaDetalhado_fas_imagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_people_black_36"
+            android:layout_below="@id/artistaDetalhado_texto"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/artistaDetalhado_fas_numero"
+            android:layout_below="@+id/artistaDetalhado_texto"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="999 fãs"/>
+
+        <ImageView
+            android:id="@+id/artistaDetalhado_albuns_imagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_album_black_36"
+            android:layout_below="@id/artistaDetalhado_fas_numero"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/artistaDetalhado_albuns_numero"
+            android:layout_below="@+id/artistaDetalhado_fas_numero"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="999 albuns"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lista_album_recycler_view_artistaDetalhado"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/artistaDetalhado_caixa"/>
+
+</RelativeLayout>
